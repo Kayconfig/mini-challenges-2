@@ -5,3 +5,22 @@ Create a program that will take in a string as input and, if there are duplicate
 For example, the input `"aaaabbcdefffffffg"` should return `["aa[aa]bbcdeff[fffff]g", 2]`
 
 Please also ensure that the input is a string, and return "Please enter a valid string" if it is not.
+
+
+declare lastItem, dup_count,resultStr, occurence_count
+for char in string
+    if char === lastItem 
+        update count
+        if count == 3
+            resultStr += "["
+            dup_count ++
+        
+    if char !== lastItem and count >= 3
+        resultStr += "]"
+        count = 1
+        lastItem = char
+    
+    resultStr += char
+    
+
+    
